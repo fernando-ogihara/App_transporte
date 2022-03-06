@@ -1,7 +1,17 @@
-/*function executarSorteio() {
+
+function executarSorteio() {
     
-    num = prompt("Qual o seu número de sorte ?");
-    num_sorteio =Math.round(Math.random()*100)+1;
+    chute = prompt("Qual o seu número de sorte ?");
+    num_sorteio =Math.round(Math.random()*10)+1;
+    console.log(num_sorteio)
+
+    while (chute<1 | chute>10) {
+        chute = prompt("Digite um número entre 1 e 10");
+    }
+
+    num = chute
+
+    num_sorteio =Math.round(Math.random()*9)+1;
     //console.log(num_sorteio)
     if (num == num_sorteio) {
         paragrafoResultado.innerHTML = "Você ganhou uma corrida!";
@@ -17,9 +27,11 @@
             paragrafoResultado.style.backgroundPosition = "center";
             paragrafoResultado.style.backgroundSize = "320px 326px";
         }
-}*/
+}
 
-/*function executarSorteio() {
+
+/*
+function executarSorteio() {
     
     chute = prompt("Qual o seu número de sorte ?");
     num_sorteio =Math.round(Math.random()*10)+1;
@@ -47,7 +59,7 @@
             //paragrafoResultado.style.backgroundSize = "320px 326px";
         }
 }
-*/
+
 
 //import {formataMoeda} from "../Uber/formataMoeda";
 
@@ -58,3 +70,4 @@ function calcular() {
     botaoCalcular.innerHTML = "Total R$ "+formataMoeda(valor_corrida); 
 }
 
+*/
